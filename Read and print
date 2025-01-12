@@ -1,0 +1,32 @@
+# Read-and-print-
+import java.util.Scanner;
+
+public class ReadAndPrint {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Reading different types of inputs
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine(); // Reads a line of text
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt(); // Reads an integer
+
+        System.out.print("Enter your salary: ");
+        double salary = scanner.nextDouble(); // Reads a decimal number
+
+        // Printing the inputs
+        System.out.println("\n--- Output ---");
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Salary: " + salary);
+
+        scanner.close();
+    }
+}
+output:
+--- Output ---
+Name: John
+Age: 25
+Salary: 45000.5
+
